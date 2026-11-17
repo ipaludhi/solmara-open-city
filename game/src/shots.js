@@ -44,6 +44,7 @@ function stageChase(state) {
   // Cover: Raka in the green Cendrawasih Sport, wanted 3 stars, three patrol
   // cars on his tail, mission 5 (Heist Bank Solmara) on the HUD, traffic
   // ahead, minimap live. Distrik Neon at golden hour.
+  state.shotCam = 'chase';
   state.screen = SCREEN_PLAY;
   state.missions.index = 4;
   state.missions.phase = 1;
@@ -70,6 +71,7 @@ function stageChase(state) {
 function stageStreet(state) {
   // On foot in Pasar Malam: Raka beside a parked Kancil GT, prompt to steal,
   // pedestrians and traffic around, mission 3 marker ahead.
+  state.shotCam = 'street';
   state.screen = SCREEN_PLAY;
   state.missions.index = 2;
   state.missions.started = true;
@@ -94,6 +96,7 @@ function stageStreet(state) {
 
 function stageTitle(state) {
   // Poster over a living city vista: beach, roads, traffic, neon district.
+  state.shotCam = 'title';
   state.screen = SCREEN_TITLE;
   state.time = 30;
   state.camera = { x: 1280, y: 1680 };
@@ -103,6 +106,7 @@ function stageTitle(state) {
 
 function stageHeist(state) {
   // Mission 5 done: the getaway, banner +$2,500, police far behind.
+  state.shotCam = 'heist';
   state.screen = SCREEN_PLAY;
   state.missions.index = 5;
   state.missions.done = [1, 2, 3, 4, 5];

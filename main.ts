@@ -5,7 +5,7 @@
 // beside this file to /output and writes /output/dossier.json, the summary the
 // judge reads, with the vendored make.fun library (buildDossier, unchanged).
 // The game itself is an original
-// 2D top-down open-world crime game: Raka, a courier dragged into the Kru Senja
+// 3D open-world crime game (raw WebGL, no libraries): Raka, a courier dragged into the Kru Senja
 // heist crew, explores the coastal city of Solmara (6 named districts) on foot
 // and by stolen car, with traffic and pedestrians, a wanted level 1-5 and police
 // who chase, 6 named story missions, combat, a HUD with minimap, title screen

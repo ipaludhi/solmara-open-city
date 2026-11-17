@@ -7,12 +7,15 @@
 <style>
   html, body { margin: 0; height: 100%; overflow: hidden; background: #14100c; }
   #game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+  /* HUD / minimap / labels / panels: 2D overlay above the WebGL canvas. */
+  #hud { position: fixed; inset: 0; width: 100%; height: 100%; display: block; pointer-events: none; }
   /* Read aloud, never shown: the status line screen readers announce. */
   #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 </style>
 </head>
 <body>
 <canvas id="game" aria-label="SOLMARA Open City: kota pantai Solmara — jalan kaki, curi mobil, kabur dari polisi, enam misi cerita"></canvas>
+<canvas id="hud" aria-hidden="true"></canvas>
 <p id="status" role="status" aria-live="polite"></p>
 <script type="module" src="./src/main.js"></script>
 </body>
